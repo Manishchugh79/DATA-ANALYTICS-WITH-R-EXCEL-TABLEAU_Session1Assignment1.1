@@ -1,0 +1,70 @@
+﻿
+Session 1 - Introduction
+
+
+
+
+Assignment - 1
+
+
+
+––
+
+Contents
+
+
+1. Introduction	2
+
+2. Objective	2
+
+3. Prerequisites	2
+
+4. Associated Data Files	2
+
+5. Problem Statement	2
+
+6. Expected Output	2
+
+
+Introduction
+This assignment will help you to understand the key concepts learnt in this session.
+
+Objective
+This assignment will test your skills on the basics of Data Analytics
+
+Prerequisites
+Not Applicable
+
+Associated Data Files
+Not Applicable
+
+Problem Statement
+1. Say True or False for the below statements:
+• Prescriptive Analytics used to predict the future outcomes?
+Answer: TRUE
+Prescriptive (optimization and simulation) Analytics is used to determine the possible outcomes on “What should we do?” rather “What has happened?” which is done in Predictive Analysis
+• Base R packages installed automatically?
+Answer: TRUE
+R Base package is automatically installed at the time of R Programming Environment setup. 
+
+2. What is Recycling of elements in a vector?
+Recycling of elements in a vector means that when an operation is performed on two different vectors of different length, elements of the shorter length vector repeats itself in a loop till the time it gains the length of a bigger vector, in order to complete the operation. 
+
+3. Give an example of recycling of elements.
+Example1	> c(1,2,3,4,5,6) + c(1,2)
+	In case the longer vector is not a multiple of shorter vector, it will give an error message, but the 
+	elements will still repeat itself in a loop or sequence to give the results:
+Example2	> c(1,2,3,4,5,6) + c(1,2,3,4)
+ 
+Expected Output
+Output1		[1] 2 4 4 6 6 8
+So, now c(1,2) has recycled itself  to c(1,2,1,2,1,2) to match the length of c(1,2,3,4,5,6) and the output will be c(1+1,2+2,3+1,4+2,5+1,6+2) = c(2,4,4,6,6,8)
+
+Output2		[1] 2 4 6 8 6 8
+Warning message:
+In c(1, 2, 3, 4, 5, 6) + c(1, 2, 3, 4) :
+  longer object length is not a multiple of shorter object length
+
+
+Copyrights© 2017, AcadGild. All Rights Reserved
+2
